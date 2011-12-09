@@ -1,0 +1,8 @@
+Zetetic combines knowledge of various application protocols with probabilistic
+automata to perform protocol analysis independent of "well-known port numbers."
+Given a stream (and, optionally, lower-level information), it will calculate a
+vector of real numbers between 0 and 1 (inclusive), indicating conformance to
+various protocols. For many protocols, the first few datagrams exchanged will
+suffice for clear determination of session protocol. Zetetic examines both sides
+of a session, and can determine protocol mismatches (attempts to speak, for
+example, SMTP to an HTTP server).
